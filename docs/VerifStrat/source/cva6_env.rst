@@ -90,3 +90,24 @@ cva6.py is the main script to run a simulation. The options are as follows :
 * \-- linker : the linker script to be used
 * \-- test (default : all) : test name. all means every test in the testlist
 * \-- seed ( default : -1) : randomization seed. -1 means random seed
+
+ariane_testharness
+------------------
+
+The Ariane testharness is a small subsystem instanciating a cva6 core with a limites set of peripherals and an interconnect. For RTL simulation, the test code is preloaded in the bootrom ( the bootrom Makefile compile the code into a systemverilog component for the bootrom). The memory map of the system is defined in the ariane_soc_pkg.sv.
+
+spike
+-----
+some doc here https://github.com/poweihuang17/Documentation_Spike
+
+seems to simulate a small system with bootrom to load code
+
+hard coded memory map
+
+uses PK (proxy kernel) and FESVR (front-end server)
+
+https://phdbreak99.github.io/riscv-training/12-demo.syscall/
+
+https://riscv.org/wp-content/uploads/2015/02/riscv-software-stack-tutorial-hpca2015.pdf
+
+https://phdbreak99.github.io/riscv-training/13-demo.verif-suite/
